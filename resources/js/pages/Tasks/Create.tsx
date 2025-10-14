@@ -1,11 +1,20 @@
-import { TaskForm } from "@/components/TaskForm";
-import React from "react";
+import Layout from '@/components/Layout';
+import { TaskForm } from '@/components/TaskForm';
+import { Container } from '@/components/ui/Container';
+import { PageProps, Task } from '@/types';
+import { Head, usePage } from '@inertiajs/react';
 
+export default function CreateForm() {
+    const { task } = usePage<PageProps<{ task: Task }>>().props;
 
-export default function CreateForm(){
     return (
         <>
-        <TaskForm></TaskForm>
+            <Layout>
+                <Head title={'Criar Tarefa'} />
+                <Container>
+                    <TaskForm task={task} />
+                </Container>
+            </Layout>
         </>
-    )
+    );
 }
