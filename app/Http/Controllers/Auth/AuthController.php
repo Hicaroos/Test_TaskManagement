@@ -28,7 +28,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('tasks.index')->with('success', 'Cadastro realizado com sucesso!');
+        return redirect()->route('tasks.index');
     }
 
     public function showLogin()
@@ -58,7 +58,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('login')->with('success', 'Logout realizado com sucesso!');
+        return redirect()->route('login');
     }
 }
-
