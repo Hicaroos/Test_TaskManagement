@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class TaskRequest extends FormRequest
 {
@@ -24,7 +25,7 @@ class TaskRequest extends FormRequest
         return [
             'title' => 'required|string|max:255',
             'description' => 'string',
-            'status' => 'required|in:pendente, em andamento, concluida'    
+            'status' => ['required', 'string', Rule::in(['pendente', 'em andamento', 'concluida'])],    
         ];
     }
     public function messages(){
