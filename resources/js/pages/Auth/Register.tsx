@@ -29,7 +29,14 @@ export default function Register() {
                             <p className="text-sm italic">Insira seus dados abaixo para criar sua conta</p>
                         </div>
 
-                        <Input type="text" name="name" placeholder="Nome" value={data.name} onChange={(e) => setData('name', e.target.value)}></Input>
+                        <Input
+                            type="text"
+                            name="name"
+                            placeholder="Nome"
+                            value={data.name}
+                            onChange={(e) => setData('name', e.target.value)}
+                            required
+                        ></Input>
                         {errors.name && <div className="text-sm text-red-500">{errors.name}</div>}
 
                         <Input
@@ -38,6 +45,7 @@ export default function Register() {
                             placeholder="Email"
                             value={data.email}
                             onChange={(e) => setData('email', e.target.value)}
+                            required
                         ></Input>
                         {errors.email && <div className="text-sm text-red-500">{errors.email}</div>}
 
@@ -47,6 +55,7 @@ export default function Register() {
                             placeholder="Senha"
                             value={data.password}
                             onChange={(e) => setData('password', e.target.value)}
+                            required
                         ></Input>
                         {errors.password && <div className="text-sm text-red-500">{errors.password}</div>}
 
@@ -56,6 +65,7 @@ export default function Register() {
                             placeholder="Confime a senha"
                             value={data.password_confirmation}
                             onChange={(e) => setData('password_confirmation', e.target.value)}
+                            required
                         ></Input>
                         <DefaultButton type="submit" disabled={processing}>
                             {processing ? 'Cadastrando...' : 'Cadastrar'}

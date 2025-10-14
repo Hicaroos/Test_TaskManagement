@@ -34,6 +34,7 @@ export default function Login() {
                                 placeholder="Email"
                                 value={data.email}
                                 onChange={(e) => setData('email', e.target.value)}
+                                required
                             ></Input>
                             {errors.email && <div className="text-sm text-red-500">{errors.email}</div>}
 
@@ -43,6 +44,7 @@ export default function Login() {
                                 placeholder="Senha"
                                 value={data.password}
                                 onChange={(e) => setData('password', e.target.value)}
+                                required
                             ></Input>
                             {errors.password && <div className="text-sm text-red-500">{errors.password}</div>}
                         </div>
