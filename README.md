@@ -17,7 +17,7 @@ Ele foi totalmente **containerizado com Docker**, garantindo um ambiente de dese
 ### Autenticação de Usuários
 - Cadastro, login e logout seguros.
 
-### 🧾 Gerenciamento de Tarefas (CRUD)
+### Gerenciamento de Tarefas (CRUD)
 - Criação de novas tarefas com título e descrição.  
 - Listagem paginada de todas as tarefas do usuário.  
 - Edição de tarefas existentes (título, descrição e status).  
