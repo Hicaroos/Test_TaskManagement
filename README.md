@@ -1,20 +1,20 @@
-# 🗂️ Gerenciador de Tarefas
+# Gerenciador de Tarefas
 
 Este é um sistema de gerenciamento de tarefas desenvolvido como um **teste técnico**.  
 A aplicação permite que os usuários se cadastrem, façam login e gerenciem suas próprias tarefas através de uma **interface web interativa**.
 
 ---
 
-## 📜 Visão Geral
+## Visão Geral
 
 O projeto consiste em uma **aplicação de página única (SPA)** com um backend robusto em **Laravel** e um frontend dinâmico em **React**.  
 Ele foi totalmente **containerizado com Docker**, garantindo um ambiente de desenvolvimento consistente e fácil de configurar.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-### 🔐 Autenticação de Usuários
+### Autenticação de Usuários
 - Cadastro, login e logout seguros.
 
 ### 🧾 Gerenciamento de Tarefas (CRUD)
@@ -23,14 +23,14 @@ Ele foi totalmente **containerizado com Docker**, garantindo um ambiente de dese
 - Edição de tarefas existentes (título, descrição e status).  
 - Exclusão de tarefas.  
 
-### 📊 Dashboard Interativo
+### Dashboard Interativo
 - Visualização de estatísticas sobre o status das tarefas (**pendente**, **em andamento**, **concluída**).  
 - Filtros para exibir tarefas por status.  
 - Listagem das **últimas 5 tarefas criadas**.  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Categoria | Tecnologia |
 |------------|-------------|
@@ -40,11 +40,11 @@ Ele foi totalmente **containerizado com Docker**, garantindo um ambiente de dese
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 Para executar este projeto localmente, você precisará ter o **Docker** e o **Docker Compose** instalados em sua máquina.
 
-### 🔹 Passo a Passo
+### Passo a Passo
 
 #### 1. Clone o repositório
 ```bash
@@ -53,7 +53,7 @@ cd test_taskmanagement
 ```
 
 #### 2. Copie o arquivo de ambiente
-> ⚠️ Este passo é obrigatório e deve ser feito **antes** de construir os containers.
+> Este passo é obrigatório e deve ser feito **antes** de construir os containers.
 ```bash
 cp .env.example .env
 ```
@@ -64,13 +64,13 @@ cp .env.example .env
 docker-compose up -d --build
 ```
 
-#### 6. Acesse a aplicação
+#### 4. Acesse a aplicação
 > Pronto! A aplicação estará disponível no seu navegador no seguinte endereço:
 ```
 http://localhost:8080
 ```
 
-#### 7. Cadastre um novo usuário
+#### 5. Cadastre um novo usuário
 Ao acessar o sistema pela primeira vez, clique em **"Register"** e crie uma nova conta para começar a gerenciar suas tarefas.
 
 ---
