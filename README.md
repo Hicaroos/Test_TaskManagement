@@ -48,7 +48,7 @@ Para executar este projeto localmente, você precisará ter o **Docker** e o **D
 
 #### 1. Clone o repositório
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone https://github.com/Hicaroos/Test_TaskManagement
 cd test_taskmanagement
 ```
 
@@ -61,7 +61,7 @@ cp .env.example .env
 #### 3. Construa as imagens e inicie os containers
 > Este comando irá construir a imagem Docker, instalar todas as dependências do **composer** e **npm** automaticamente e iniciar os serviços.
 ```bash
-docker-compose up -d --build
+docker compose up -d --build
 ```
 
 #### 4. Acesse a aplicação
